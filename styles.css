@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root{
+    --Soft_blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    --Very_dark_blue: hsl(217, 54%, 11%);
+    --Very_dark_blue_1: hsl(216, 50%, 16%);
+    --Very_dark_blue_2: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --font-low: 300;
+    --font-medium: 400;
+    --font-high: 600;
+     font-size: 18px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    background-color: var(--Very_dark_blue);
+}
+.total{
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+    padding-top:1.5rem;
+}
+.card{
+    background-color: var(--Very_dark_blue_1);
+    display: grid;
+    max-width: 375px;
+    height: 100%;
+    grid-template-rows: 6fr 3fr 1px 1fr;
+    padding: 20px 20px 10px 20px;
+    border-radius: 1rem;
+
+}
+.card-image{
+    display: flex;
+    justify-content: center;
+    grid-row: 1/2;
+    
+}
+.card-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.center .tittle{
+    color: var(--White);
+    font-size: 18px;
+}
+.center .text{
+    color: var(--Soft_blue);
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+.icons .icon-left{
+    display: flex;
+    gap: 6px;
+    color: var(--Cyan);
+}
+.icons .icon-right{
+    display: flex;
+    gap:6px;
+    color: var(--Soft_blue);
+}
+.low-card{
+    display: flex;
+    align-items: center;
+    gap: 30px
+}
+.low-card .final-icon img{
+    grid-row: 3/4;
+    height: 30px;
+}
+.low-card .final-text p{
+    color: var(--Soft_blue);
+}
+.low-card .final-text span{
+    color: var(--White);
+}
